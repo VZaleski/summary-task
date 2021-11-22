@@ -2,6 +2,9 @@ function someFn(word) {
   let wordVerification = /[0-9`~!@#№$%^&*()\-_=+"';:{}\[\]<>?.,\\/\* ]/g;
   const startIndex = 0;
   let result = "";
+  if (typeof word !== 'string') {
+    return 'It is not string'
+  }
   if(word.search(wordVerification) !== -1) {
     return "Incorrect word"
   } else {
@@ -12,3 +15,5 @@ function someFn(word) {
     return result;
   }
 }
+
+console.log(someFn('13'));
