@@ -15,5 +15,3 @@ function someFn(word) {
     return result;
   }
 }
-
-console.log(someFn('13'));
