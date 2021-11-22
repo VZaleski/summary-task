@@ -1,10 +1,10 @@
 import React from 'react';
 import stylesDisplay from './Display.module.css';
 
-const Display = () => {
+const Display = (props) => {
   return (
     <div className={stylesDisplay.Display}>
-      <div className={stylesDisplay.DisplayNumber}>0</div>
+      <div className={stylesDisplay.DisplayNumber}>{props.state.Display.currentValue}</div>
     </div>
   );
 }
