@@ -1,0 +1,14 @@
+.EvenOdd {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  margin: 25px auto;
+  background-color: rebeccapurple;
+}
+
+.EvenOddText {
+  width: auto;
+  height: auto;
+  margin: auto;
+  font-size: 28px;
+}
