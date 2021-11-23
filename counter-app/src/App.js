@@ -8,7 +8,7 @@ function App(props) {
   return (
     <div className={stylesApp.App}>
       <Display state={props.state}/>
-      <EvenOdd />
+      <EvenOdd state={props.state}/>
       <BlockButtons state={props.state}/>
     </div>
   );
