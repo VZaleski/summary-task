@@ -1,6 +1,7 @@
 const state = {
   Display: {
     currentValue: 0,
+    currentColor: "green",
   },
   BlockButtons: {
     buttons: [
@@ -13,6 +14,8 @@ const state = {
     currentText: "Введено четное число",
     even: "Введено четное число",
     odd: "Введено нечетное число",
+    evenColor: "green",
+    oddColor: 'red',
   }
 }
 

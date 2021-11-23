@@ -11,9 +11,11 @@ const BlockButtons = (props) => {
       props.state.Display.currentValue = number;
       if(number % 2 === 0) {
         props.state.EvenOdd.currentText = props.state.EvenOdd.even;
+        props.state.Display.currentColor = props.state.EvenOdd.evenColor;
         rerenderTree(props.state);
       } else {
         props.state.EvenOdd.currentText = props.state.EvenOdd.odd;
+        props.state.Display.currentColor = props.state.EvenOdd.oddColor;
         rerenderTree(props.state);
       }
     } else {
@@ -21,11 +23,12 @@ const BlockButtons = (props) => {
     }
   }
 
-  let reset = (name) => {
+  let reset = () => {
     let number = props.state.Display.currentValue;
     number = 0;
     props.state.Display.currentValue = number;
     props.state.EvenOdd.currentText = props.state.EvenOdd.even;
+    props.state.Display.currentColor = props.state.EvenOdd.evenColor;
     rerenderTree(props.state);
   }
 
@@ -35,9 +38,11 @@ const BlockButtons = (props) => {
     props.state.Display.currentValue = number;
     if(number % 2 === 0) {
       props.state.EvenOdd.currentText = props.state.EvenOdd.even;
+      props.state.Display.currentColor = props.state.EvenOdd.evenColor;
       rerenderTree(props.state);
     } else {
       props.state.EvenOdd.currentText = props.state.EvenOdd.odd;
+      props.state.Display.currentColor = props.state.EvenOdd.oddColor;
       rerenderTree(props.state);
     }
   }
