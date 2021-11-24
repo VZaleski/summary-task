@@ -7,9 +7,9 @@ import stylesApp from'./App.module.css';
 function App(props) {
   return (
     <div className={stylesApp.App}>
-      <Display state={props.state}/>
-      <EvenOdd state={props.state}/>
-      <BlockButtons state={props.state}/>
+      <Display display={props.state.Display}/>
+      <EvenOdd evenOdd={props.state.EvenOdd}/>
+      <BlockButtons blockButtons={props.state.BlockButtons}/>
     </div>
   );
 }

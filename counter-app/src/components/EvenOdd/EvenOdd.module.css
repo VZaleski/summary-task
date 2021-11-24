@@ -5,8 +5,8 @@
   margin: 25px auto;
   background:linear-gradient(to bottom, #FFFFFF, #E6E6E6) #F5F5F5 repeat-x;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #B3B3B3;
-  outline: 2px solid #000; /* Чёрная рамка */
-  border-radius: 10px; /* Радиус скругления */
+  outline: 2px solid #000;
+  border-radius: 10px;
 }
 
 .EvenOddText {

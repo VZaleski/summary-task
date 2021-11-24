@@ -3,7 +3,7 @@ import stylesButtonItem from'./ButtonItem.module.css';
 
 const ButtonItem = (props) => {
   return (
-    <button className={ stylesButtonItem.ButtonItem }>{props.value}</button>
+    <button className={ stylesButtonItem.ButtonItem } onClick={props.function}>{props.name}</button>
   );
 }
 
